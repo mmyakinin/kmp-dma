@@ -3,6 +3,7 @@
 import React from "react";
 import { Container } from "../";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const statsData = [
     { id: 1, value: 35, label: "Universitet", suffix: "+" },
@@ -14,22 +15,26 @@ const statsData = [
 // ToDo: Добавить библиотку react-intersection-observer чтобы работал enableScrollSpy
 
 export const StatsSection: React.FC = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+    });
+
     return (
-        <section className="bg-white border-b border-gray-100">
+        <section className="bg-white border-b border-border">
             <Container className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-8">
                 {statsData.map((item) => (
-                    <div key={item.id}>
+                    <div key={item.id} ref={ref}>
                         <div className="text-3xl text-primary font-bold">
-                            <CountUp
-                                start={0}
-                                end={item.value}
-                                duration={3}
-                                suffix={item.suffix}
-                                enableScrollSpy={true}
-                                scrollSpyOnce={true}
-                            />
+                            {inView && (
+                                <CountUp
+                                    start={0}
+                                    end={item.value}
+                                    duration={3}
+                                    suffix={item.suffix}
+                                />
+                            )}
                         </div>
-                        <div className="text-sm text-gray-500 mt-1">
+                        <div className="text-sm text-muted mt-1">
                             {item.label}
                         </div>
                     </div>

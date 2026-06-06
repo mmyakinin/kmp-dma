@@ -9,6 +9,11 @@
 
     --secondary: #c9992a;
     --secondary-foreground: #ffffff;
+
+    --muted: #6b7280;
+    --muted-foreground: #9ca3af;
+
+    --border: #e5e7eb;
 }
 
 @theme inline {
@@ -20,6 +25,11 @@
 
     --color-secondary: var(--secondary);
     --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    --color-border: var(--border);
 }
 
 body {

@@ -60,7 +60,7 @@ export const Header: React.FC<Props> = ({ className }) => {
                             <h2 className="text-base text-primary">
                                 Karyera Mərkəzləri
                             </h2>
-                            <p className="text-xs text-gray-500">
+                            <p className="text-xs text-muted">
                                 Vahid İnformasiya Platforması
                             </p>
                         </div>
@@ -76,10 +76,10 @@ export const Header: React.FC<Props> = ({ className }) => {
                                     <Link
                                         href={item.href}
                                         className={cn(
-                                            "text-sm px-3 py-2 rounded-lg transition-all duration-500 hover:bg-blue-100 hover:text-primary",
+                                            "text-sm text-center px-3 py-2 rounded-lg transition-all duration-500 hover:bg-blue-100 hover:text-primary",
                                             isActive
                                                 ? "text-primary"
-                                                : "text-gray-500",
+                                                : "text-muted",
                                         )}
                                     >
                                         {item.title}

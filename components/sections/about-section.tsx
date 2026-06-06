@@ -40,30 +40,30 @@ export const AboutSection: React.FC = () => {
                     <h2 className="text-primary text-3xl font-semibold mb-3">
                         Karyera Mərkəzi nədir?
                     </h2>
-                    <p className="text-gray-500 leading-relaxed mb-3">
+                    <p className="text-muted leading-relaxed mb-3">
                         Karyera Mərkəzləri universitetlər daxilindəki struktur
                         vahidlərdir. Tələbə və məzunların iş bazarına uğurlu
                         inteqrasiyasını təmin etmək məqsədi daşıyır.
                     </p>
-                    <p className="text-gray-500 leading-relaxed mb-6">
+                    <p className="text-muted leading-relaxed mb-6">
                         Karyera Mərkəzləri universitetlər daxilindəki struktur
                         vahidlərdir. Tələbə və məzunların iş bazarına uğurlu
                         inteqrasiyasını təmin etmək məqsədi daşıyır.
                     </p>
                     <div className="grid grid-cols-2 gap-3">
-                        <div className="inline-flex gap-1 items-center text-sm text-gray-500">
+                        <div className="inline-flex gap-1 items-center text-sm text-muted">
                             <Check size={24} className="text-primary" />{" "}
                             Tələbələr üçün{" "}
                         </div>
-                        <div className="inline-flex gap-1 items-center text-sm text-gray-500">
+                        <div className="inline-flex gap-1 items-center text-sm text-muted">
                             <Check size={24} className="text-primary" />{" "}
                             Məzunlar üçün
                         </div>
-                        <div className="inline-flex gap-1 items-center text-sm text-gray-500">
+                        <div className="inline-flex gap-1 items-center text-sm text-muted">
                             <Check size={24} className="text-primary" />{" "}
                             Akademik heyət üçün
                         </div>
-                        <div className="inline-flex gap-1 items-center text-sm text-gray-500">
+                        <div className="inline-flex gap-1 items-center text-sm text-muted">
                             <Check size={24} className="text-primary" />{" "}
                             İşəgötürənlər üçün
                         </div>
@@ -84,7 +84,7 @@ export const AboutSection: React.FC = () => {
                                 <h3 className="font-semibold text-gray-800 mb-1 text-sm">
                                     {item.title}
                                 </h3>
-                                <p className="text-xs text-gray-500 leading-relaxed">
+                                <p className="text-xs text-muted leading-relaxed">
                                     {item.description}
                                 </p>
                             </div>

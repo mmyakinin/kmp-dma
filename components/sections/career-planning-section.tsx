@@ -10,7 +10,7 @@ export const CareerPlanningSection: React.FC = () => {
                 <h2 className="text-3xl text-primary font-semibold mb-4">
                     Karyeranı bu gün planlaşdır
                 </h2>
-                <p className="text-gray-500 mb-8">
+                <p className="text-muted mb-8">
                     Alo Karyera xidməti vasitəsilə peşəkar karyera məsləhəti al,
                     CV-ni hazırla və staj tap.
                 </p>

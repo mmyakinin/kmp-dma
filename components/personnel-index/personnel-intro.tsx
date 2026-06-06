@@ -12,19 +12,19 @@ const average = (
 
 export const PersonnelIntro = () => {
     return (
-        <div className="bg-white rounded-xl border border-gray-300 p-8 mb-8">
+        <div className="bg-white rounded-xl border border-border p-8 mb-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h2 className="text-xl text-primary font-semibold mb-4">
                         Kadr İndeksi nədir?
                     </h2>
-                    <p className="text-gray-500 leading-relaxed mb-4">
+                    <p className="text-muted leading-relaxed mb-4">
                         Kadr İndeksi Azərbaycan Respublikasının Əmək Nazirliyi
                         tərəfindən həyata keçirilən bir layihədir. Tələbə və
                         məzunların üç əsas bacarıq sahəsindəki səviyyəsini
                         ölçür.
                     </p>
-                    <p className="text-gray-500">
+                    <p className="text-muted">
                         Bu indeks həm işəgötürənlərə, həm universitetlərə, həm
                         də dövlət qurumlarına əmək bazarının ehtiyaclarını
                         anlamaq üçün dəyərli bir alət kimi xidmət edir.
@@ -35,7 +35,7 @@ export const PersonnelIntro = () => {
                         <div className="text-4xl font-bold text-primary">
                             {average}
                         </div>
-                        <div className="text-sm text-gray-500">
+                        <div className="text-sm text-muted">
                             2024 Milli Ortalama Kadr İndeksi
                         </div>
                     </div>
