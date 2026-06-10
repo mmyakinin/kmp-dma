@@ -1,6 +1,4 @@
-import { Container } from "@/components";
-import { NewsCard } from "@/components/cards/news-card";
-import { PageHeader } from "@/components/page-header";
+import { Container, NewsCard, PageHeader } from "@/components/shared";
 import { news } from "@/data/news";
 
 export default function NewsPage() {

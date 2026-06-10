@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
 import React from "react";
-import { Container } from ".";
+import { Container } from "../";
+import { cn } from "@/lib/utils";
 
 interface Props {
     className?: string;

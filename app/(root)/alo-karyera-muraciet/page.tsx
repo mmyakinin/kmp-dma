@@ -1,6 +1,11 @@
-import { Container } from "@/components";
-import { PageHeader } from "@/components/page-header";
-import { File, GraduationCap, MessageCircle, Phone } from "lucide-react";
+import { PageHeader } from "@/components/shared";
+import {
+    Container,
+    File,
+    GraduationCap,
+    MessageCircle,
+    Phone,
+} from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -64,7 +69,7 @@ export default function ContactPage() {
                         href={"/"}
                         className="border-2 border-primary bg-transparent text-primary font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground text-sm py-2 px-4 rounded-lg"
                     >
-                      Qeydiyyat
+                        Qeydiyyat
                     </Link>
                 </div>
                 <div className="bg-white border border-border rounded-xl overflow-hidden p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 ">

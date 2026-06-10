@@ -17,7 +17,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
     textCenter = false,
 }) => {
     return (
-        <div className={cn("mb-8", textCenter && "text-center")}>
+        <div className={cn("mb-8", textCenter ? "text-center" : "")}>
             {icon && (
                 <div className="w-16 h-16 bg-primary flex items-center justify-center mx-auto mb-4 rounded-xl">
                     {icon}

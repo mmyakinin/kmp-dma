@@ -12,8 +12,6 @@ const statsData = [
     { id: 4, value: 78, label: "Məzun məşğulluq faizi", suffix: "%" },
 ];
 
-// ToDo: Добавить библиотку react-intersection-observer чтобы работал enableScrollSpy
-
 export const StatsSection: React.FC = () => {
     const { ref, inView } = useInView({
         triggerOnce: true,

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "..";
+import { Container } from "../";
 import { Briefcase, Building2, Check, FileText, Handshake } from "lucide-react";
 
 export const services = [

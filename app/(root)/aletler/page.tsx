@@ -1,5 +1,4 @@
-import { Container, ToolsGrid } from "@/components";
-import { PageHeader } from "@/components/page-header";
+import { Container, PageHeader, ToolsGrid } from "@/components/shared";
 
 export default function ToolsPage() {
     return (

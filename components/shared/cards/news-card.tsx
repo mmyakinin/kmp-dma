@@ -1,8 +1,8 @@
-import { ArrowRight } from "lucide-react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { Badge } from "../ui/badge";
+import { Badge } from "@/components/ui/";
+import { ArrowRight } from "lucide-react";
 
 interface NewsCardProps {
     imgSrc: string;
@@ -24,7 +24,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({
     return (
         <Link
             href={`/xeberler/${slug}`}
-            className="block bg-white rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="block bg-white rounded-xl border border-border overflow-hidden card-hover"
         >
             <article>
                 <Image

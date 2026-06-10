@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "..";
+import { Container } from "../";
 import Link from "next/link";
 
 export const CareerPlanningSection: React.FC = () => {
@@ -15,10 +15,16 @@ export const CareerPlanningSection: React.FC = () => {
                     CV-ni hazırla və staj tap.
                 </p>
                 <div className="flex flex-wrap justify-center items-center gap-3">
-                    <Link href={"./alo-karyera-muraciet"} className="bg-primary text-primary-foreground font-medium py-3 px-6 rounded-lg">
+                    <Link
+                        href={"./alo-karyera-muraciet"}
+                        className="bg-primary text-primary-foreground font-medium py-3 px-6 rounded-lg"
+                    >
                         Alo Karyeraya müraciət et
                     </Link>
-                    <Link href={"./kadr-indeksi"} className="bg-transparent text-primary font-medium border-2 border-primary py-3 px-6 rounded-lg transition-all duration-500 hover:bg-primary hover:text-primary-foreground">
+                    <Link
+                        href={"./kadr-indeksi"}
+                        className="bg-transparent text-primary font-medium border-2 border-primary py-3 px-6 rounded-lg transition-all duration-500 hover:bg-primary hover:text-primary-foreground"
+                    >
                         Kadr İndeksini öyrən
                     </Link>
                 </div>

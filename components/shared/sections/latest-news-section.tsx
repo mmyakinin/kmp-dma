@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../container";
+import { Container } from "../";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { news } from "@/data/news";

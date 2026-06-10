@@ -1,10 +1,10 @@
 import {
     Container,
+    PageHeader,
     PersonnelImportance,
     PersonnelIntro,
     PersonnelSkills,
-} from "@/components";
-import { PageHeader } from "@/components/page-header";
+} from "@/components/shared";
 import { ChartColumn } from "lucide-react";
 
 export default function PersonnelIndexPage() {
