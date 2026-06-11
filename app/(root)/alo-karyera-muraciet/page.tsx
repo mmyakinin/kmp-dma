@@ -1,7 +1,11 @@
-import { Container, PageHeader, ContactCard } from "@/components/shared";
+import {
+    Container,
+    PageHeader,
+    ContactCard,
+    ContactForm,
+} from "@/components/shared";
 import { ContactCardProps } from "@/components/shared/cards/contact-card";
-import { Button } from "@/components/ui";
-import { ArrowRight, File, GraduationCap, MessageCircle, Phone } from "lucide-react";
+import { File, GraduationCap, MessageCircle, Phone } from "lucide-react";
 
 export const contactData: ContactCardProps[] = [
     {
@@ -60,76 +64,7 @@ export default function ContactPage() {
                 <h2 className="font-semibold text-2xl mb-4">
                     Onlayn Müraciət Forması
                 </h2>
-                <form action="">
-                    <div className="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <label
-                                htmlFor=""
-                                className="block text-sm text-muted mb-1"
-                            >
-                                Ad Soyad *
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Adınız"
-                                className="w-full border-2 border-border rounded-xl py-2 pl-3 pr-10"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                htmlFor=""
-                                className="block text-sm text-muted mb-1"
-                            >
-                                Telefon *
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="+994"
-                                className="w-full border-2 border-border rounded-xl py-2 pl-3 pr-10"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                htmlFor=""
-                                className="block text-sm text-muted mb-1"
-                            >
-                                E-poçt *
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="example@gmail.com"
-                                className="w-full border-2 border-border rounded-xl py-2 pl-3 pr-10"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                htmlFor=""
-                                className="block text-sm text-muted mb-1"
-                            >
-                                Mövzu *
-                            </label>
-                            <input
-                                type="text"
-                                className="w-full border-2 border-border rounded-xl py-2 pl-3 pr-10"
-                            />
-                        </div>
-                        <div className="md:col-span-2">
-                            <label
-                                htmlFor=""
-                                className="block text-sm text-muted mb-1"
-                            >
-                                Müraciətin mətni
-                            </label>
-                            <textarea
-                                className="w-full h-20 border-2 border-border rounded-xl py-2 pl-3 pr-10 resize-none"
-                                placeholder="Müraciətinizi yazın ..."
-                            />
-                        </div>
-                        <div className="md:col-span-2">
-                            <Button className="py-3.5 px-8 text-base max-[576px]:w-full">Göndər <ArrowRight className="ml-2"/></Button>
-                        </div>
-                    </div>
-                </form>
+                <ContactForm />
             </div>
         </Container>
     );
