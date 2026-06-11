@@ -69,7 +69,7 @@ export const AboutSection: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                     {services.map((item, index) => {
                         const Icon = item.icon;
 

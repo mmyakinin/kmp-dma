@@ -1,9 +1,9 @@
-import { Container } from "@/components";
-import { Badge } from "@/components/ui/badge";
+import { Container } from "@/components/shared";
+import { Badge } from "@/components/ui/";
 import { news } from "@/data/news";
-import { Calendar } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Calendar } from "lucide-react";
 
 export default async function NewsDetailPage({
     params,

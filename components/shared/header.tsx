@@ -41,9 +41,9 @@ export const Header: React.FC<Props> = ({ className }) => {
 
                     {/* Right Side */}
                     <div className="flex items-center gap-3">
-                        <button className="inline-flex items-center gap-1 rounded-lg text-sm text-primary font-normal bg-blue-100 px-3 py-2">
+                        {/* <button className="inline-flex items-center gap-1 rounded-lg text-sm text-primary font-normal bg-blue-100 px-3 py-2">
                             <User size={18} /> <span>Giriş</span>
-                        </button>
+                        </button> */}
                         <button
                             className="block"
                             onClick={() => setIsMenuOpen(true)}

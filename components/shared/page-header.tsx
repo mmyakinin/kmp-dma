@@ -35,7 +35,12 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
             </h1>
 
             {desc && (
-                <p className="text-muted max-w-xl mx-auto leading-relaxed">
+                <p
+                    className={cn(
+                        "text-muted leading-relaxed",
+                        textCenter ? " max-w-xl mx-auto" : "",
+                    )}
+                >
                     {desc}
                 </p>
             )}

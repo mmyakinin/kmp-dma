@@ -40,8 +40,8 @@ export const NewsCard: React.FC<NewsCardProps> = ({
                     <p className="text-xs text-muted mb-3">{shortDesc}</p>
                     <div className="flex justify-between items-center">
                         <span className="text-xs text-muted">{date}</span>
-                        <span className="flex items-center gap-1  text-sm font-medium text-primary ">
-                            Oxu <ArrowRight size={18} />
+                        <span className="text-sm font-medium text-primary ">
+                            Oxu <ArrowRight size={18} className="inline" />
                         </span>
                     </div>
                 </div>

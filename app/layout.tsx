@@ -14,7 +14,9 @@ export default function MainLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${poppins.variable} h-full antialiased`}>
+            <body
+                className={`${poppins.variable} min-h-screen antialiased`}
+            >
                 {children}
             </body>
         </html>

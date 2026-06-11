@@ -2,6 +2,7 @@ import React from "react";
 
 import { Container } from "../";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const CareerPlanningSection: React.FC = () => {
     return (
@@ -15,18 +16,19 @@ export const CareerPlanningSection: React.FC = () => {
                     CV-ni hazırla və staj tap.
                 </p>
                 <div className="flex flex-wrap justify-center items-center gap-3">
-                    <Link
+                    <Button
                         href={"./alo-karyera-muraciet"}
-                        className="bg-primary text-primary-foreground font-medium py-3 px-6 rounded-lg"
+                        className="py-3.5 px-8 text-base"
                     >
                         Alo Karyeraya müraciət et
-                    </Link>
-                    <Link
+                    </Button>
+                    <Button
                         href={"./kadr-indeksi"}
-                        className="bg-transparent text-primary font-medium border-2 border-primary py-3 px-6 rounded-lg transition-all duration-500 hover:bg-primary hover:text-primary-foreground"
+                        variant="outline"
+                        className="py-3.5 px-8 text-base"
                     >
                         Kadr İndeksini öyrən
-                    </Link>
+                    </Button>
                 </div>
             </Container>
         </section>
