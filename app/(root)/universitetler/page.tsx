@@ -1,7 +1,30 @@
-import { Container, PageHeader } from "@/components/shared";
-import { Badge } from "@/components/ui";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
+import { UniversityProps } from "@/@types/university.types.";
+import { Container, PageHeader, UniversityCard } from "@/components/shared";
+
+const universities: UniversityProps[] = [
+    {
+        id: 1,
+        slug: "bdu-karyera-merkezi",
+        name: "Bakı Dövlət Universiteti",
+        description: `Azərbaycanın ən köhnə və nüfuzlu ali təhsil müəssisəsi.
+                    1919-cu ildə təsis edilmiş, 15.000-dən çox tələbəyə ev
+                    sahibliyi edir.`,
+        city: "Bakı",
+        type: "Dövlət",
+        careerCenter: "BDU Karyera Mərkəzi",
+        imageUrl: "/bdu-logo.png",
+    },
+    {
+        id: 2,
+        slug: "aztu-karyera-merkezi",
+        name: "Azərbaycan Texniki Universiteti",
+        description: `Mühəndislik və texnologiya sahəsində Azərbaycanın aparıcı universiteti. 1950-ci ildən fəaliyyət göstərir.`,
+        city: "Bakı",
+        type: "Dövlət",
+        careerCenter: "AzTU Karyera və Məşğulluq Mərkəzi",
+        imageUrl: "/aztu-logo.png",
+    },
+];
 
 export default function UniversitiesPage() {
     return (
@@ -13,46 +36,23 @@ export default function UniversitiesPage() {
 
 "
             />
-            <div className="text-sm text-muted mb-4">1 nəticə tapıldı</div>
+            <div className="text-sm text-muted mb-4">
+                {universities.length} nəticə tapıldı
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="card-hover bg-white border border-border rounded-xl overflow-hidden cursor-pointer">
-                    <div className="h-2 bg-primary"></div>
-                    <div className="p-6">
-                        <div className="flex items-start gap-3 mb-4">
-                            <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-blue-100">
-                                <Image
-                                    src={"/bdu-logo.png"}
-                                    alt="BDU"
-                                    width={35}
-                                    height={35}
-                                />
-                            </div>
-                            <div>
-                                <h3 className="text-sm font-semibold">
-                                    Bakı Dövlət Universiteti
-                                </h3>
-                                <div className="flex flex-wrap items-center gap-2 mt-1">
-                                    <Badge text={"Bakı"} />
-                                    <Badge text={"Dövlət"} />
-                                </div>
-                            </div>
-                        </div>
-                        <p className="text-xs text-muted font-normal leading-relaxed mb-4">
-                            Azərbaycanın ən köhnə və nüfuzlu ali təhsil
-                            müəssisəsi. 1919-cu ildə təsis edilmiş, 15.000-dən
-                            çox tələbəyə ev sahibliyi edir.
-                        </p>
-                        <div className="flex justify-between items-center">
-                            <span className="text-sm text-primary font-medium">
-                                BDU Karyera Mərkəzi
-                            </span>
-                            <span className="text-sm font-medium text-primary ">
-                                Ətraflı{" "}
-                                <ArrowRight size={18} className="inline" />
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                {universities.map((item) => (
+                    <UniversityCard
+                        key={item.id}
+                        id={item.id}
+                        slug={item.slug}
+                        name={item.name}
+                        description={item.description}
+                        city={item.city}
+                        type={item.type}
+                        careerCenter={item.careerCenter}
+                        imageUrl={item.imageUrl}
+                    />
+                ))}
             </div>
         </Container>
     );
