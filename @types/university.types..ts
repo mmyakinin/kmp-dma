@@ -5,6 +5,7 @@ export interface UniversityProps {
     description: string;
     city: string;
     type: string;
+    level: string;
     careerCenter: string;
     imageUrl: string;
 }

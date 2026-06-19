@@ -35,6 +35,14 @@
     --color-border: var(--border);
 }
 
+@layer base {
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+    }
+}
+
 @layer components {
     .card-hover {
         @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;

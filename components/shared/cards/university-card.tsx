@@ -36,9 +36,9 @@ export const UniversityCard: React.FC<Props> = ({
                         <Image
                             src={imageUrl}
                             alt="BDU"
-                            width={35}
-                            height={35}
-                            className="w-full h-full object-cover"
+                            width={48}
+                            height={48}
+                            className="w-full h-full object-contain p-1"
                         />
                     </div>
                     <div>

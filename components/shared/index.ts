@@ -6,6 +6,7 @@ export { Footer } from "./footer";
 export { MobileNavigation } from "./mobile-navigation";
 export { Overlay } from "./overlay";
 export { SkillProgressBar } from "./skill-progress-bar";
+export { UniversityFilters } from "./university-filters";
 
 export * from "./aletler";
 export * from "./cards";
