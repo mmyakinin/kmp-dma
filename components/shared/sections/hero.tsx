@@ -18,7 +18,7 @@ export const Hero: React.FC<Props> = ({ className }) => {
             )}
         >
             <Container className="text-center">
-                <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+                <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
                     Karyera mərkəzləri nədir <br /> və sənə nə qazandırır?
                 </h1>
                 <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">

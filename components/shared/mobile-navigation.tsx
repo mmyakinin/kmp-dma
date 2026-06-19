@@ -61,14 +61,6 @@ export const MobileNavigation: React.FC<Props> = ({
                     })}
                 </ul>
             </nav>
-
-            {/* Login Button */}
-            {/* <div className="absolute bottom-4 left-4 right-4">
-                <button className="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-primary-foreground">
-                    <User size={18} />
-                    Giriş
-                </button>
-            </div> */}
         </div>
     );
 };

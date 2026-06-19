@@ -4,7 +4,7 @@ import "./globals.css";
 const poppins = Poppins({
     variable: "--font-poppins",
     subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"],
+    weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function MainLayout({
@@ -14,9 +14,7 @@ export default function MainLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${poppins.variable} min-h-screen antialiased`}
-            >
+            <body className={`${poppins.variable} min-h-screen antialiased`}>
                 {children}
             </body>
         </html>

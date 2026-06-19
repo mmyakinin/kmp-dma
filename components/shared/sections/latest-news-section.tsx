@@ -9,7 +9,7 @@ export const LatestNewsSection: React.FC = () => {
     return (
         <section className="py-16 bg-gray-100">
             <Container>
-                <div className="flex justify-between items-center mb-8">
+                <div className="flex flex-col sm:flex-row gap-4 justify-between sm:items-center items-start mb-8">
                     <h2 className="text-3xl font-semibold text-primary ">
                         Son xəbərlər
                     </h2>

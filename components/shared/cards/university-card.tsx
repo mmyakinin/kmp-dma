@@ -30,7 +30,7 @@ export const UniversityCard: React.FC<Props> = ({
             )}
         >
             <div className="h-2 bg-primary"></div>
-            <div className="p-6">
+            <div className="flex flex-col h-full p-6">
                 <div className="flex items-start gap-3 mb-4">
                     <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-blue-100">
                         <Image
@@ -52,12 +52,12 @@ export const UniversityCard: React.FC<Props> = ({
                 <p className="text-xs text-muted font-normal leading-relaxed mb-4">
                     {description}
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-auto">
                     <span className="text-sm text-primary font-medium">
                         {careerCenter}
                     </span>
-                    <span className="text-sm font-medium text-primary ">
-                        Ətraflı <ArrowRight size={18} className="inline" />
+                    <span className="inline-flex gap-2 text-sm font-medium text-primary ">
+                        Ətraflı <ArrowRight size={18} />
                     </span>
                 </div>
             </div>

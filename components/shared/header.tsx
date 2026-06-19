@@ -3,12 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, User, X } from "lucide-react";
+import { Container, MobileNavigation, Overlay } from "@/components/shared";
+import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Container } from "./container";
 import { navLinks } from "@/data/navigations";
-import { Overlay } from "./overlay";
-import { MobileNavigation } from "./mobile-navigation";
 
 interface Props {
     className?: string;
@@ -23,7 +21,7 @@ export const Header: React.FC<Props> = ({ className }) => {
             className={cn("bg-white shadow-md sticky top-0 z-50", className)}
         >
             <Container>
-                <div className="flex items-center justify-between gap-3 h-16">
+                <div className="flex items-center justify-between gap-4 h-16">
                     {/* Left Side - Logo */}
                     <Link href={"/"} className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold bg-primary">
@@ -40,10 +38,28 @@ export const Header: React.FC<Props> = ({ className }) => {
                     </Link>
 
                     {/* Right Side */}
-                    <div className="flex items-center gap-3">
-                        {/* <button className="inline-flex items-center gap-1 rounded-lg text-sm text-primary font-normal bg-blue-100 px-3 py-2">
-                            <User size={18} /> <span>Giriş</span>
-                        </button> */}
+                    <ul className="hidden lg:flex items-center justify-between gap-4 text-sm">
+                        {navLinks.map((item, index) => {
+                            const isActive = pathname === item.href;
+
+                            return (
+                                <li key={index}>
+                                    <Link
+                                        href={item.href}
+                                        className={cn(
+                                            "block rounded-lg p-2 text-center transition-colors hover:text-primary",
+                                            isActive &&
+                                                "bg-blue-100 text-primary"
+                                        )}
+                                    >
+                                        {item.title}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+
+                    <div className="flex lg:hidden items-center gap-3">
                         <button
                             className="block"
                             onClick={() => setIsMenuOpen(true)}
